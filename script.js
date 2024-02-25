@@ -47,17 +47,17 @@ var techstack2 = document.querySelector('.main .card2 .techs');
 
 for(var i = 0;i< 3;i++){
     
-    var techstack = `<div class="techstack border-2 border-gray-950 px-2 py-1 rounded-[50px]"> ${usersData[0].techStak[i]}</div>`;
+    var techstack = `<div class="techstack border-2 border-gray-300 px-2 py-1 rounded-[50px]"> ${usersData[0].techStak[i]}</div>`;
    // techstack1.appendChild(techstack);
     techstack1.innerHTML += techstack;
-    var techstack = `<div class="techstack border-2 border-gray-950 px-2 py-1 rounded-[50px]"> ${usersData[1].techStak[i]}</div>`;
+    var techstack = `<div class="techstack border-2 border-gray-300 px-2 py-1 rounded-[50px]"> ${usersData[1].techStak[i]}</div>`;
     techstack2.innerHTML += techstack;
 
     
 
     //techstack2.appendChild(techstack);
 }
-var counttech = `<div class="haveskills px-2 py-1 rounded-[50px] bg-red-400 shadow-lg"> <h4 class="font-medium"> +${usersData[0].techStak.length-2} more</h4></div>`
+var counttech = `<div class="haveskills px-2 py-1 rounded-[50px] bg-red-400 shadow-lg"> <h4 class="font-medium"> +${usersData[0].techStak} more</h4></div>`
     var counttech = `<div class="haveskills px-2 py-1 rounded-[50px] bg-red-400 shadow-lg"> <h4 class="font-medium"> +${usersData[1].techStak.length-2} more</h4></div>`
 
 techstack1.innerHTML += counttech;
