@@ -47,7 +47,6 @@ var techstack2 = document.querySelector('.main .card2 .techs');
 
 for(var i = 0;i< 3;i++){
     
-
     var techstack = `<div class="techstack border-2 border-gray-950 px-2 py-1 rounded-[50px]"> ${usersData[0].techStak[i]}</div>`;
    // techstack1.appendChild(techstack);
     techstack1.innerHTML += techstack;
