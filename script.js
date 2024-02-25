@@ -1,3 +1,4 @@
+
 const usersData = [
     {
         id:0,
@@ -29,3 +30,25 @@ const usersData = [
     },
     
 ]
+
+var imgdiv1 = document.querySelector('.main .card img');
+var imgdiv2 = document.querySelector('.main .card2 img');
+var descr1 = document.querySelector('.main .card p');
+var descr2 = document.querySelector('.main .card2 p');
+var cityname1 = document.querySelector('.main .card .name ');
+var city2name = document.querySelector('.main .card2 .name');
+var cardonename = document.querySelector('.main .card h1');
+var cardtwome = document.querySelector('.main .card2 h1');
+
+
+
+imgdiv1.setAttribute('src',usersData[0].image);
+imgdiv2.setAttribute('src',usersData[1].image);
+cardonename.innerHTML = usersData[0].username;
+cityname1.innerHTML = usersData[0].city;
+city2name.innerHTML = usersData[0].city;
+cardtwome.innerHTML = usersData[1].username;
+descr1.innerHTML = usersData[0].description;
+descr2.innerHTML = usersData[1].description;
+
+
